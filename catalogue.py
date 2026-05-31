@@ -25,5 +25,10 @@ for ligne in lignes:
     moyenne = somme/len(lignes)
 print(moyenne)
 
+#Ajoute un nouveau film de ton choix à la fin du fichier
+fichier = open("catalogue.txt", "a", encoding="utf-8")
+fichier.write("Batman;2008;Nolan;10\n")
+fichier.close()
+
 
 
