@@ -25,5 +25,6 @@ for ligne in lignes:
     moyenne = somme/len(lignes)
 print(moyenne)
 
+
     
 
