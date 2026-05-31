@@ -44,8 +44,3 @@ lignes = [ ligne2, ligne3, ligne4, ligne5, ligne6, ligne7]
 
 for ligne in lignes:
     print(f"{ligne[0]} ({ligne[1]}) - Réalisateur : {ligne[2]} - Note : {ligne[3]}")
-
-
-
-
-
