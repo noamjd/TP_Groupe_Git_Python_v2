@@ -18,7 +18,12 @@ for ligne in lignes:
     if int(ligne[3]) >= 9:
         print(ligne[0])
         
-    
+#Affiche uniquement les films avec une note ≥ 9
+somme = 0
+for ligne in lignes:
+    somme += int(ligne[3])
+    moyenne = somme/len(lignes)
+print(moyenne)
 
     
 
