@@ -28,7 +28,8 @@ with open("depenses.csv", "r", encoding="utf-8") as fichier:
             try:
                 total_loisirs += float(ligne['montant'])
             except ValueError:
-                print(f"Attention : Impossible de lire le montant pour la ligne {ligne}")              
+                print(f"Attention : Impossible de lire le montant pour la ligne {ligne}")
+                      
 print(total)
 print(f"Détail des dépenses pour l'alimentation : {total_alimentation}")
 print(f"Détail des dépenses pour le transport : {total_transport}")
