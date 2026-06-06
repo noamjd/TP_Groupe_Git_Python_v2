@@ -35,7 +35,16 @@ with open("depenses.csv", "r", encoding="utf-8") as fichier:
             depense_moins = ligne['montant']
         if float(ligne['montant']) > float(depense_plus):
             depense_plus = ligne['montant']
-                      
+    nouvelle_depense = {
+        'date': '2026-06-06',
+        'categorie': 'Loisirs',
+        'description': 'Voyage',
+        'montant': '150.00'
+}
+    with open("depenses.csv", "a",encoding="utf-8") as fichier:
+        nvl = csv.DictWriter(fichier, fieldnames=['date', 'categorie', 'description', 'montant'])
+        nvl.writerow(nouvelle_depense)
+    
 print(total)
 print(f"Détail des dépenses pour l'alimentation : {total_alimentation}")
 print(f"Détail des dépenses pour le transport : {total_transport}")
