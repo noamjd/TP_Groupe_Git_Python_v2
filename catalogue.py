@@ -38,4 +38,4 @@ with open("catalogue.txt", "r", encoding="utf-8") as fichier:
 
 #Relit et réaffiche le catalogue complet pour confirmer l'ajout
 for film in films:
-    print(f"{film[0]} ({film[1]}) - Réalisateur : {film[2]} - Note : {film[3]}")
+    print(f"{film[0]} ({film[1]}) - Réalisateur : {film[2]} - Note : {film[3]}/10")
