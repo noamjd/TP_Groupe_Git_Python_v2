@@ -17,3 +17,8 @@ else:
 fichier = open("contacts.txt", "a", encoding="utf-8")
 fichier.write("Franklin Saint|franklin.saint@gmail.com|0768905645\n")
 fichier.close()
+
+with open("contacts.txt", "r", encoding="utf-8") as fichier:
+    for ligne in fichier:
+        lignes = fichier.readlines()
+print(f"Le fichier contient {len(lignes)} lignes ")

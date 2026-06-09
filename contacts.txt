@@ -2,3 +2,4 @@ Alice Dupont|alice@email.com|0612345678
 Bob Martin|bob@email.com|0698765432
 Clara Durand|clara@email.com|0654321987
 David Bernard|david@email.com|0677889900
+Franklin Saint|franklin.saint@gmail.com|0768905645
