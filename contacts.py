@@ -13,3 +13,7 @@ if secu in contacts:
     print(contacts[secu])
 else:
     print('Contact introuvable')
+
+fichier = open("contacts.txt", "a", encoding="utf-8")
+fichier.write("Franklin Saint|franklin.saint@gmail.com|0768905645\n")
+fichier.close()
